@@ -1,14 +1,15 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import Images from '../../Images/camera-unsplash.jpg';
-import Review from '../Review/Review';
 
+import { useNavigate } from 'react-router-dom';
+import useReview from '../../hooks/useReviews';
+import Images from '../../Images/camera-unsplash.jpg';
+import Card from '../Card/Card';
 import './Home.css'
 const Home = () => {
-
+    const [reviews, setReviews] = useReview();
     const navigate = useNavigate();
-    const showReviews = () =>{
+    const showReviews = () => {
         navigate(`/reviews`);
+
     }
     return (
         <div className='intro-container'>
@@ -23,7 +24,15 @@ const Home = () => {
             </div>
 
             <div>
-                <Review></Review>
+                <h2 className='my-20'>Customer reviews</h2>
+                <div className="cards grid grid-cols-3">
+                    {
+                        reviews.slice(0,3).map(cardData => <Card
+                            key={cardData.id}
+                            cardData={cardData}
+                        ></Card>)
+                    }
+                </div>
                 <button className='bg-rose-900 text-white px-4 py-1 rounded-lg mb-20' onClick={showReviews}>See all reviews</button>
             </div>
         </div>
