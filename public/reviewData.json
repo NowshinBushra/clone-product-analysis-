@@ -1,0 +1,38 @@
+[
+    {
+      "id": "1",
+      "ratings": "4",
+      "name": "Chrystal Reynolds",
+      "review": "George attends to all my photographic inquiries so well. I have been a Michaels Camera purchaser for 30 years and still say that the service is better than ever. Thank you"
+    },
+    {
+      "id": "2",
+      "ratings": "5",
+      "name": "Dunn Schmidt",
+      "review": "I very much appreciated the expertise and knowledge of the staff concerning the camera I selected and the cheerful and patient way they shared their knowledge with me."
+    },
+    {
+      "id": "3",
+      "ratings": "3.5",
+      "name": "Juliet Hooper",
+      "review": "Knowledge of the product range friendly service gave me some alternatives and not pushy"
+    },
+    {
+      "id": "4",
+      "ratings": "4.5",
+      "name": "Laverne Barton",
+      "review": "The service centre staff have always been very helpful and especially the Company were excellent in resolving any issues for me. Many thanks."
+    },
+    {
+      "id": "5",
+      "ratings": "3",
+      "name": "Reilly Stout",
+      "review": "Sales staff spent time explaining the camera and he did not think that any question we asked was silly."
+    },
+    {
+      "id": "6",
+      "ratings": "3.5",
+      "name": "Chang Sanchez",
+      "review": "As a newcomer to SLR cameras he advised me on what I should consider. We are very happy with our purchase."
+    }
+  ]

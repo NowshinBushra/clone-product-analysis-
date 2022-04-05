@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Images from '../../Images/camera-unsplash.jpg';
+import Review from '../Review/Review';
 
 import './Home.css'
 const Home = () => {
@@ -22,7 +23,8 @@ const Home = () => {
             </div>
 
             <div>
-                <button className='bg-rose-900 text-white px-4 py-1 rounded-lg' onClick={showReviews}>See all reviews</button>
+                <Review></Review>
+                <button className='bg-rose-900 text-white px-4 py-1 rounded-lg mb-20' onClick={showReviews}>See all reviews</button>
             </div>
         </div>
 

@@ -5,7 +5,6 @@ import Blogs from './components/Blogs/Blogs';
 import Dashboard from './components/Dashboard/Dashboard';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
-import MyPie from './components/MyPie/MyPie';
 import NotFound from './components/NotFound/NotFound';
 import Review from './components/Review/Review';
 
