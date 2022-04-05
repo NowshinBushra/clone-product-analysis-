@@ -1,10 +1,20 @@
 import React from 'react';
-
+import Images from '../../Images/camera-unsplash.jpg';
+import './Home.css'
 const Home = () => {
     return (
-        <div>
-            
+        <div className='intro-container'>
+            <div className='mt-40 heading text-left'>
+                <h1 className='fw-bold text-6xl'>Capture every moment</h1>
+                <h2 className='fw-bold text-rose-800 text-6xl mb-8'>As if it's your last</h2>
+                <p className='fw-bold text-secondary leading-10'>A picture is a reflection of the dreams, vision, missions and goals hidden within. We test and rate scores of cameras and lenses each year, from pocket-friendly shooters to high-end medium format systems. Here's everything you need to know to pick the best digital camera for you.</p>
+                <button className='bg-rose-200 rounded-md px-4 py-2 mt-4 text-rose-800 fw-bold'>Live Demo</button>
+            </div>
+            <div className='mt-10'>
+                <img className='cam-img' src={Images} alt=""></img>
+            </div>
         </div>
+
     );
 };
 
