@@ -1,7 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Images from '../../Images/camera-unsplash.jpg';
+
 import './Home.css'
 const Home = () => {
+
+    const navigate = useNavigate();
+    const showReviews = () =>{
+        navigate(`/reviews`);
+    }
     return (
         <div className='intro-container'>
             <div className='mt-40 heading text-left'>
@@ -12,6 +19,10 @@ const Home = () => {
             </div>
             <div className='mt-10'>
                 <img className='cam-img' src={Images} alt=""></img>
+            </div>
+
+            <div>
+                <button className='bg-rose-900 text-white px-4 py-1 rounded-lg' onClick={showReviews}>See all reviews</button>
             </div>
         </div>
 

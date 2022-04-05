@@ -1,9 +1,7 @@
 import React from 'react';
-import { Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
-import MyPie from '../MyPie/MyPie';
+import { Pie, PieChart, ResponsiveContainer, Tooltip } from 'recharts';
 
-
-const Dashboard = () => {
+const MyPie = () => {
     const data = [
         {
             "month": "Mar",
@@ -42,26 +40,17 @@ const Dashboard = () => {
             "revenue": 61000
         }
     ]
-
     return (
-        <div className='flex'>
-            <div className='mt-20 mx-5'>
+        <div className='ms-5'>
             <h4 className='mb-5'>Investment VS Revenue</h4>
-            <LineChart width={400} height={300} data={data}>
-                <Line dataKey="revenue"></Line>
-                <XAxis dataKey="month"></XAxis>
+            <PieChart width={400} height={300}>
+                <Pie data={data} dataKey="revenue" cx="50%" cy="50%" outerRadius={60} fill="#8884d8"></Pie>
+                <Pie data={data} dataKey="investment" cx="50%" cy="50%" innerRadius={70} fill="#82ca9d" label></Pie>
+
                 <Tooltip></Tooltip>
-                <YAxis dataKey="investment"></YAxis>
-            </LineChart>
-            </div>
-            <div className='mt-20 ms-5'>
-            <MyPie></MyPie>
-            </div>
+            </PieChart>
         </div>
-
-
-
     );
 };
 
-export default Dashboard;
+export default MyPie;
