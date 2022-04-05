@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e3bda382.css",
+    "main.js": "/static/js/main.9289a804.js",
+    "static/js/787.50e698a2.chunk.js": "/static/js/787.50e698a2.chunk.js",
+    "static/media/camera-unsplash.jpg": "/static/media/camera-unsplash.244b95eb0179d74e84fe.jpg",
+    "index.html": "/index.html",
+    "main.e3bda382.css.map": "/static/css/main.e3bda382.css.map",
+    "main.9289a804.js.map": "/static/js/main.9289a804.js.map",
+    "787.50e698a2.chunk.js.map": "/static/js/787.50e698a2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e3bda382.css",
+    "static/js/main.9289a804.js"
+  ]
+}
