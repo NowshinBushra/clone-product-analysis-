@@ -1,10 +1,6 @@
 # Project Name
 Product Analysis website
 
-# live website Link
-
- [Live Website](https://lambent-caramel-e32a69.netlify.app/dashboard).
-
 ## Project Overview
 - Product introduction with a headline
 - header navigation bar
